@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Wall Clock</title>
+</head>
+<body>
+        <div class="clock" id="clock">
+                <span id="time">00:00:00</span>
+        </div>
+        <div class="control-buttons">
+            <button class="pause-btn" id="pauseBtn" onclick="togglePause()">Pause</button>
+            <button class="resume-btn" id="resumeBtn" onclick="toggleResume()">Resume</button>
+            <!-- <button class="reset-btn" id="resetBtn" onclick="toggleReset()">Reset</button> -->
+           
+        </div>
+        <div class="theme">
+            <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">Change Theme</button>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --bg-color: #111;
+    --text-color: #fff;
+    --clock-bg: #222;
+    --clock-hover: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body.light {
+    --bg-color: #f0f0f0;
+    --text-color: #111;
+    --clock-bg: #fff;
+    --clock-hover: #ddd;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Playfair Display", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    transition: background-color 0.3s, color 0.3s;
+}
+.clock {
+    font-size: 5em;
+    background-color: var(--clock-bg);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    transition: background-color 0.3s, box-shadow 0.3s ease;
+}
+.clock:hover {
+    background-color: var(--clock-hover);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+.control-buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none; border-radius: 5px; cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pause-btn {
+    background-color: #f44336;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(244, 67, 54, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s ease;
+}
+.pause-btn:hover {
+    background-color: #d32f2f;
+    box-shadow: 0 0 20px rgba(244, 67, 54, 0.7);
+}
+.resume-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s ease;
+}
+.resume-btn:hover {
+    background-color: #388E3C;
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.7);
+}
+/* .reset-btn {
+    background-color: #2196F3;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(33, 150, 243, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s ease;
+}
+.reset-btn:hover {
+    background-color: #1976D2;
+    box-shadow: 0 0 20px rgba(33, 150, 243, 0.7);
+} */
+.theme-btn {
+    background-color: #FFC107;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s ease;
+}
+.theme-btn:hover {
+    background-color: #FFA000;
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.7);
+}
+
+  
